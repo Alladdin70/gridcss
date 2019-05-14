@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div id="mainGridArea">
+            <div id="header"></div>
+            <div></div>
+            <div id="titleArea"><h2 id="title">Report</h2></div>
+            <div></div>
+            <div></div>
+            <div id="formGridArea">
+                <form id="form">
+                    <div id="startDate">
+                        <label for="startDateValue">Start date:</label>
+                        <input type="date" id="startDateValue" name="startDate" value="" min="2019-01-01" max="2019-12-31"/>
+                    </div>
+                    <div id="endDate">
+                        <label for="endDateValue">End date:</label>
+                        <input type="date" id="endDateValue" name="endDate" value="" min="2019-01-01" max="2019-12-31"/>
+                    </div>
+                    <div>
+                        <label for="contractorName">Contractor:</label>
+                        <input type="text" id="contractorName" name="contractor" value=""/>
+                    </div>
+                    <div id="back">
+                        <input type="button" id="backButton" value="Back" onclick="window.location='index.html'">
+                    </div>
+                    <div id="process">
+                        <input type="submit" value="Process">
+                    </div>
+                </form>
+            </div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div id="footer" ></div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,73 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 14.05.2019, 16:57:49
+    Author     : Репин.Сергей
+*/
+#mainGridArea {
+    height: 100vh;
+    display: grid;
+    grid-template-columns:repeat(3, 1fr) ;
+    grid-template-rows: 40px repeat(3, 1fr) 40px;
+    grid-gap: 10px;
+    grid-template-areas:
+        "header header header"
+        ". title ."
+        ". form ."
+        ". . ."
+        "footer footer footer";        
+        
+}
+#header {
+    grid-area: header;
+    background-color: #4391A5;
+}
+#titleArea{
+    grid-area: title;
+}
+#form {
+    grid-area: form;
+}
+#footer {
+    grid-area: footer;
+    background-color: #4391A5;
+}
+
+#form {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    grid-template-areas:
+        "start end"
+        "contractor contractor"
+        "back submit"
+}
+#startDateValue {
+    grid-area: start;
+}
+
+#endDateValue {
+    grid-area: end;
+}
+
+#contractorName {
+    grid-area: contractor;
+}
+
+#back {
+    grid-area: back;
+}
+
+#process {
+    grid-area: submit;
+}
+
+.date {
+    position: relative;
+    top: 10px;
+    left:auto;
+}
